@@ -1,0 +1,7 @@
+on run {input, parameters}
+
+	set myScriptPath to (path to documents folder as text) & "AppleScripts:commercial_muter.scpt"
+	run script alias myScriptPath
+
+	return input
+end run
