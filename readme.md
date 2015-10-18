@@ -7,8 +7,8 @@ If you follow along with this tutorial, you will be able to press a hotkey whene
 
 1. Clone the repository
 2. Put the `commercial_muter.scpt` file somewhere safe where it can be referenced everytime you press your desired hotkey. (I put it in a folder I made called `AppleScripts` in the `Documents` directory)
-3. Press ⌘ + Spacebar
-4. Select "automator"
+3. Press ⌘ + Spacebar and select "automator"
+4. Choose "Service"
 5. Select `Utilities` in your `Library`
 6. Double click on `Run AppleScript` in the adjacent pane
 7. Replace **ALL** of the text in the AppleScript box with the contents of the `sample-automator-applescript.txt` file included in this repository
