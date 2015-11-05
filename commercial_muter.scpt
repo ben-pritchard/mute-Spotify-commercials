@@ -2,9 +2,11 @@
 -- Currently mutes the Spotify player, but commented out another method which mutes the CPU master volume
 
 -- Main Flow
-set remainingTrackDuration to getRemainingTrackDuration()
-muteSpotify(remainingTrackDuration)
+-- set remainingTrackDuration to getRemainingTrackDuration()
+-- muteSpotify(remainingTrackDuration)
 -- muteCPU(remainingTrackDuration)
+muteAllCommercials()
+
 
 -- Gets the number of seconds remaining in the current Spotify track
 on getRemainingTrackDuration()
@@ -38,3 +40,20 @@ on muteCPU(duration)
 	delay duration
 	set volume output volume (output volume of savedSettings)
 end muteCPU
+
+on muteAllCommercials()
+	--tell application "Spotify"
+	--repeat
+	--display dialog (spotify url of current track) as string
+	--end repeat
+	--end tell
+	set track to "spotify:track:2dNnedX2HPpmm7ZuuAWHJi"
+	trim_line(track, "spotify:", 0)
+	display dialog track
+
+end muteAllCommercials
+
+--spotify:track:2dNnedX2HPpmm7ZuuAWHJi
+--spotify:ad:0000000000000000000000129455a4d4
+--spotify:track:2NoLuJDRh7V8zz64w8675S
+--spotify:track:2NoLuJDRh7V8zz64w8675S
